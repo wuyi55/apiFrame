@@ -1,0 +1,12 @@
+#用户登录成功
+url: http://127.0.0.1:5000/login
+method: post
+data: {"username":"无涯","password":None,"age":18,"sex":"男"}
+except: {"username":"无涯"}
+
+---
+#用户名不能为空
+url: http://127.0.0.1:5000/login
+method: post
+data: {"username":"无涯","password":None,"age":18,"sex":"男"}
+except: {"username":"用户名不能为空"}
